@@ -1,0 +1,53 @@
+html *
+{
+   color: #000 !important;
+   font-family: 'Roboto', sans-serif !important;
+}
+
+table, td, th {
+    border: solid 1px black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    margin: 0
+}
+
+h1 {
+    text-align: center;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 2fr, 1fr;
+    gap: 50px;
+    width: 60%;
+    margin: auto;
+}
+
+.left {
+    grid-column: 1;
+}
+
+.right {
+    grid-column: 2;
+}
+
+@media screen and (max-width: 767px) {
+    .wrapper {
+      grid-template-columns: 1fr;
+      width: 100%;
+    }
+
+    .left {
+        grid-column: 1;
+    }
+
+    .right {
+        grid-column: 1;
+    }
+  }
